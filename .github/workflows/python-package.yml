@@ -14,7 +14,7 @@ jobs:
     - name: Tata Sky IPTV allChannels.json Updater
       run: |
             git config --global user.name "github-actions[bot]"
-            git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git config --global user.email "rehank3g@gmail.com"
             git clone "https://${{ secrets.my_token }}@github.com/rehank3g/Tata-Sky-IPTV.git"
             cd Tata-Sky-IPTV/code_samples
             channels=$(python3 allChannels.py 2>/dev/null |tr -d '\0' | tail -n1)
